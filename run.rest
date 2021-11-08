@@ -1,0 +1,62 @@
+//products//
+GET http://localhost:8080/productsAPI
+
+###
+POST  http://localhost:8080/AddProduct
+Content-Type: application/json
+
+{
+    "name": "name",
+      "price": "price",
+      "category": "category",
+      "description": "description",
+      "pics": ["pic1","pic2"]
+}
+
+###
+DELETE  http://localhost:8080/deleteProduct/6188f7606a95a2a03c875164
+
+###
+
+PATCH   http://localhost:8080/updateProduct/61853b7ac9c617b724fea0a8
+Content-Type: application/json
+
+{
+    "name": "name-new",
+      "price": "price-new",
+      "category": "category-new",
+      "description": "description-new",
+      "pics": ["pic1","pic2"]
+}
+
+###
+//Cart//
+
+GET   http://localhost:8080/cartsAPI
+
+###
+POST  http://localhost:8080/newCart
+
+###
+
+GET http://localhost:8080/findOneCart/618907ce6a95a2a03c875165
+
+###
+PATCH  http://localhost:8080/addToCartProducts/61853b7ac9c617b724fea0aa
+###
+
+PATCH  http://localhost:8080/deleteFromCart/61853b7ac9c617b724fea0a8
+###
+
+//Cart//
+GET   http://localhost:8080/contactsAPI
+
+###
+POST  http://localhost:8080/newContactsMassage
+Content-Type: application/json
+
+{
+    "message": "name-message"
+    
+}
+###
