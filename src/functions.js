@@ -140,7 +140,8 @@ function findDocFromDB(req, res, DB, collection) {
 }
 
 function pushDocToCart(req, res, DB, collection) {
-  let params = req.params.id;
+  let params = req.body.id;
+  console.log(params);
   let object = { _id: ObjectId(params) };
   let cartId = { _id: ObjectId("618907ce6a95a2a03c875165") };
   let update = {$push: {products: object}};

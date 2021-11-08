@@ -1,0 +1,321 @@
+[{
+ 
+  "name": "Toyota Corolla",
+  "price": 28360,
+  "category": "Sedan",
+  "description": "The 2022 Toyota Corolla ranks in the middle of the compact car class",
+  "pics": [
+    "https://i.ibb.co/Y7qpxhm/toyota-corolla.jpg",
+    "https://i.ibb.co/0DyVm4K/back-toyota-corolla.jpg"
+  ]
+},{
+  
+  "name": "Honda Civic",
+  "price": "28036",
+  "category": "Sedan",
+  "description": "The 2021 Honda Civic is a finalist for our 2021 Best Compact Car",
+  "pics": [
+    "https://i.ibb.co/42znYk2/honda-civic.jpg",
+    "https://i.ibb.co/8b08zJ5/back-honda-civic.jpg"
+  ]
+},{
+ 
+  "name": "BMW 3-Series",
+  "price": 76900,
+  "category": "Sedan",
+  "description": "Phenomenal fuel efficiency and intuitive features",
+  "pics": [
+    "https://i.ibb.co/J3WSmQR/bmw-3.jpg",
+    "https://i.ibb.co/RPHrB7Y/back-bmw-3.jpg"
+  ]
+},{
+
+  "name": "Genesis G70",
+  "price": 54500,
+  "category": "Sedan",
+  "description": "The 2022 Genesis G70 claims one of the top spots in our luxury cars",
+  "pics": [
+    "https://i.ibb.co/2Krkjwp/genesis-g70.jpg",
+    "https://i.ibb.co/HG4tjHH/back-genesis-g70.jpg"
+  ]
+},{
+
+  "name": "Hyundai Elantra",
+  "price": 22000,
+  "category": "Sedan",
+  "description": "The 2022 Hyundai Elantra has a refined powertrain, polished handling",
+  "pics": [
+    "https://i.ibb.co/K6KNhzy/hyundai-elantra.jpg",
+    "https://i.ibb.co/yX2WFnj/back-hyundai-elantra.jpg"
+  ]
+},{
+ 
+  "name": "Acura ILX",
+  "price": 32100,
+  "category": "Sedan",
+  "description": "Currently, the Acura ILX has a score of 8.8 out of 10",
+  "pics": [
+    "https://i.ibb.co/f8nGsLL/acura-ilx.jpg",
+    "https://i.ibb.co/FXsXQzN/back-acura-ilx.jpg"
+  ]
+},{
+
+  "name": "Alfa Romeo Giulia",
+  "price": 75250,
+  "category": "Sedan",
+  "description": "With powerful engines and spry handling, the Alfa Romeo Giulia is a joy",
+  "pics": [
+    "https://i.ibb.co/N6dqvgf/alfa-romeo-giulia.jpg",
+    "https://i.ibb.co/jRHT4j5/back-alfa-romeo-giulia.jpg"
+  ]
+},{
+ 
+  "name": "Cadillac CT4",
+  "price": 44895,
+  "category": "Sedan",
+  "description": "The 2021 Cadillac CT4 is more fun to drive than some other cars in the class",
+  "pics": [
+    "https://i.ibb.co/kmX9Q3y/cadillac-ct4.jpg",
+    "https://i.ibb.co/0ZHYKLd/back-cadillac-ct4.jpg"
+  ]
+},{
+
+  "name": "Audi Q3",
+  "price": 38900,
+  "category": "SUV",
+  "description": "A rich list of features and a blissful ride help the Audi Q3 climb toward the top",
+  "pics": [
+    "https://i.ibb.co/4Z4zSbR/audi-q3.jpg",
+    "https://i.ibb.co/bm3rzQZ/back-audi-q3.jpg"
+  ]
+},{
+
+  "name": "BMW X5",
+  "price": 105900,
+  "category": "SUV",
+  "description": "The 2022 BMW X5 ranks near the top of the luxury midsize SUV class",
+  "pics": [
+    "https://i.ibb.co/9tWXgt0/bmw-x5.jpg",
+    "https://i.ibb.co/1sjZn1B/back-bmw-x5.jpg"
+  ]
+},{
+
+  "name": "Cadillac XT6",
+  "price": 58295,
+  "category": "SUV",
+  "description": "The 2022 Cadillac XT6 finishes near the top of our luxury midsize SUV rankings",
+  "pics": [
+    "https://i.ibb.co/prC7M13/cadillac-xt6.jpg",
+    "https://i.ibb.co/r2GF2sY/back-cadillac-xt6.jpg"
+  ]
+},{
+
+  "name": "GMC Acadia",
+  "price": 58900,
+  "category": "SUV",
+  "description": "The 2022 GMC Acadia finishes in the top of our midsize SUV rankings",
+  "pics": [
+    "https://i.ibb.co/GxhGb5w/gmc-acadia.jpg",
+    "https://i.ibb.co/sQjybZr/back-gmc-acadia.jpg\""
+  ]
+},{
+
+  "name": "Honda CR-V",
+  "price": 35550,
+  "category": "SUV",
+  "description": "The 2022 Honda CR-V finishes near the top of our compact SUV rankings",
+  "pics": [
+    "https://i.ibb.co/2yH7d6T/honda-cr-v.jpg",
+    "https://i.ibb.co/353P5YZ/back-honda-cr-v.jpg"
+  ]
+},{
+
+  "name": "Hyundai Tucson",
+  "price": 36350,
+  "category": "SUV",
+  "description": "The redesigned 2022 Hyundai Tucson ranks at the top of the compact SUV ",
+  "pics": [
+    "https://i.ibb.co/JmgXntc/hyundai-tucson.jpg",
+    "https://i.ibb.co/zXgKtRL/back-hyundai-tucson.jpg"
+  ]
+},{
+  
+  "name": "Kia Soul",
+  "price": 27790,
+  "category": "SUV",
+  "description": "The 2022 Kia Soul sits near the top of our subcompact SUV rankings",
+  "pics": [
+    "https://i.ibb.co/jv7N5m0/kia-soul.jpg",
+    "https://i.ibb.co/jf0m5mx/back-kia-soul.jpg"
+  ]
+},{
+  
+  "name": "Lexus UX",
+  "price": 39040,
+  "category": "SUV",
+  "description": "The 2022 Lexus UX boasts easy maneuverability, a wealth of standard",
+  "pics": [
+    "https://i.ibb.co/TmNMhPZ/lexus-ux.jpg",
+    "https://i.ibb.co/Brmr9hc/back-lexus-ux.jpg"
+  ]
+},{
+  
+  "name": "Mitsubishi Mirage",
+  "price": 18195,
+  "category": "Hatchback",
+  "description": "The 2021 Mitsubishi Mirage’s rough ride, dull engine, cheap cabin",
+  "pics": [
+    "https://i.ibb.co/NWsTdgm/mitsubishi-mirage.jpg",
+    "https://i.ibb.co/fYm7HNq/back-mitsubishi-mirage.jpg"
+  ]
+},{
+  
+  "name": "Subaru Impreza",
+  "price": 26503,
+  "category": "Hatchback",
+  "description": "The Subaru Impreza sits in the top of our compact car rankings",
+  "pics": [
+    "https://i.ibb.co/h10hyTk/subaru-impreza.jpg",
+    "https://i.ibb.co/f4W6H5Z/back-subaru-impreza.jpg"
+  ]
+},{
+  
+  "name": "Chevrolet Bolt",
+  "price": 36500,
+  "category": "Hatchback",
+  "description": "he all-electric Chevrolet Bolt boasts a long driving range",
+  "pics": [
+    "https://i.ibb.co/WttxRpL/chevrolet-bolt.jpg",
+    "https://i.ibb.co/Yp1MW5N/back-chevrolet-bolt.jpg"
+  ]
+},{
+  
+  "name": "Volkswagen GTI",
+  "price": 28695,
+  "category": "Hatchback",
+  "description": "Thrilling handling, solid acceleration, and a refined, spacious cabin",
+  "pics": [
+    "https://i.ibb.co/tQ0rpG4/volkswagen-golf-gti.jpg",
+    "https://i.ibb.co/M9BPBjT/back-volkswagen-golf-gti.jpg"
+  ]
+},{
+  
+  "name": "BMW i3",
+  "price": 35526,
+  "category": "Hatchback",
+  "description": "The 2020 BMW i3 boasts quick acceleration, roomy front seats",
+  "pics": [
+    "https://i.ibb.co/s313WYj/bmw-i3.jpg",
+    "https://i.ibb.co/6rLG0gC/back-mazda-mazda-3.jpg"
+  ]
+},{
+  
+  "name": "Honda Fit",
+  "price": 23623,
+  "category": "Hatchback",
+  "description": "The 2020 Honda Fit ranks near the top of the subcompact car class",
+  "pics": [
+    "https://i.ibb.co/fHjkqbD/honda-fit.jpg",
+    "https://i.ibb.co/Fzn50xm/back-honda-fit.jpg"
+  ]
+},{
+  
+  "name": "Mazda Mazda3",
+  "price": 28872,
+  "category": "Hatchback",
+  "description": "The 2020 Mazda3 sits near the top of our compact car rankings",
+  "pics": [
+    "https://i.ibb.co/JpnG5tt/mazda-mazda-3.jpg",
+    "https://i.ibb.co/6rLG0gC/back-mazda-mazda-3.jpg"
+  ]
+},{
+  
+  "name": "Nissan Leaf",
+  "price": 34909,
+  "category": "Hatchback",
+  "description": "The 2020 Nissan Leaf has zippy handling, quick acceleration",
+  "pics": [
+    "https://i.ibb.co/0hMyMTL/nissan-leaf.jpg",
+    "https://i.ibb.co/QDPWDw8/back-nissan-leaf.jpg"
+  ]
+},{
+  
+  "name": "Chevrolet Colorado",
+  "price": 44200,
+  "category": "Truck",
+  "description": "he 2021 Chevrolet Colorado has a great towing capacity and powerful",
+  "pics": [
+    "https://i.ibb.co/80vbkLY/chevrolet-colorado.jpg",
+    "https://i.ibb.co/vQnMQRy/back-chevrolet-colorado.jpg"
+  ]
+},{
+  
+  "name": "Ford F-150",
+  "price": 74600,
+  "category": "Truck",
+  "description": "The redesigned 2021 Ford F-150 claims one of the top spots in  pickup truck",
+  "pics": [
+    "https://i.ibb.co/cXfQPbt/ford-f-150.jpg\"",
+    "https://i.ibb.co/MPsKM7S/back-ford-f-150.jpg"
+  ]
+},{
+  
+  "name": "Jeep Gladiator",
+  "price": 45240,
+  "category": "Truck",
+  "description": "The 2021 Jeep Gladiator has a spacious interior, intuitive tech features",
+  "pics": [
+    "https://i.ibb.co/hXBr3HX/jeep-gladiator.jpg",
+    "https://i.ibb.co/BKDL7px/back-jeep-gladiator.jpg"
+  ]
+},{
+  
+  "name": "Nissan Titan",
+  "price": 59680,
+  "category": "Truck",
+  "description": "While it does feature one of the best safety ratings in the class",
+  "pics": [
+    "https://i.ibb.co/wNV56BS/nissan-titan.jpg",
+    "https://i.ibb.co/2n7Kpxj/back-nissan-titan.jpg"
+  ]
+},{
+  
+  "name": "Ram 1500",
+  "price": 70325,
+  "category": "Truck",
+  "description": "he 2021 Ram 1500 finishes near the top of our full-size pickup truck",
+  "pics": [
+    "https://i.ibb.co/wsC2drb/ram-ram-1500.jpg",
+    "https://i.ibb.co/VjrpCgY/back-ram-ram-1500.jpg"
+  ]
+},{
+  
+  "name": "GMC Canyon",
+  "price": 43219,
+  "category": "Truck",
+  "description": "The 2019 GMC Canyon has a classy cabin and excellent ratings",
+  "pics": [
+    "https://i.ibb.co/Y8410mp/gmc-canyon.jpg",
+    "https://i.ibb.co/Bt2y88q/back-gmc-canyon.jpg"
+  ]
+},{
+  
+  "name": "Toyota Tacoma",
+  "price": 45850,
+  "category": "Truck",
+  "description": "The 2019 Toyota Tacoma takes one of the top spots on ickup truck rankings",
+  "pics": [
+    "https://i.ibb.co/pZG61Fh/toyota-tacoma.jpg",
+    "https://i.ibb.co/nnKLXbW/back-toyota-tacoma.jpg"
+  ]
+},{
+  
+  "name": "Honda Ridgeline",
+  "price": 49000,
+  "category": "Truck",
+  "description": "The 2017 Honda Ridgeline ranks high in our small but competitive truck",
+  "pics": [
+    "https://i.ibb.co/sQVZvFF/honda-ridgeline.jpg",
+    "https://i.ibb.co/tQMCzHq/back-honda-ridgeline.jpg"
+  ]
+}]

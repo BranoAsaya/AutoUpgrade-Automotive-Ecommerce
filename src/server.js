@@ -34,7 +34,7 @@ app.post("/newCart", (req, res) => {
 app.get("/findOneCart/:id", (req, res) => {
   functions.findDocFromDB(req, res, "store", "carts");
 });
-app.patch("/addToCartProducts/:id", (req, res) => {
+app.patch("/addToCartProducts", (req, res) => {
   functions.pushDocToCart(req, res, "store", "carts");
 });
 app.patch("/deleteFromCart/:id", (req, res) => {
@@ -49,7 +49,7 @@ app.get("/contactsAPI", (req, res) => {
   functions.APIdatabase(req, res, "store", "contacts");
 });
 app.post("/newContactsMassage", (req, res) => {
-  
+
   functions.createNewMessage(req, res, "store", "contacts");
 });
 

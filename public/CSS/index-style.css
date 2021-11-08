@@ -160,6 +160,7 @@ ul {
 }
 .flipCard:hover img:last-child {
   display: block;  
+
 }
 .flipCard:hover img:first-child {
   display: none;  

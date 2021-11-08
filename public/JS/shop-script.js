@@ -15,8 +15,7 @@ function axiosProducts(page) {
         return arg.category === page;
       });
 
-      category.forEach(
-        (card) =>
+      category.forEach((card) =>
           (divHomeCards.innerHTML += `
 <div id="tid"> 
 <a  class="flipCard">
@@ -25,11 +24,13 @@ function axiosProducts(page) {
  </a>
 <h3>${card.name}</h3>
     <p>${card.description}</p>
-    <a href=>${card.price}</a>
-    <span>$</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="" class="btn">Shop Now </a>
+    <a>${card.price} </a>
+    <span style='font-size:20px;color:rgb(0, 0, 0);font-style:normal;font-weight:bold;'>&#36;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+      <button onclick="AddProductToCart('${card._id}')" class="btn">Shop Now </button>
 </div> 
 `)
+
       );
     })
     .catch((err) => {
@@ -38,3 +39,15 @@ function axiosProducts(page) {
     .then(() => {});
 }
 axiosProducts(page);
+
+
+function AddProductToCart(id) {
+  axios.patch('/addToCartProducts/',{id:id})
+  .then( (response)=> {
+    console.log(response);
+  })
+  .catch( (error)=> {
+    console.log(error);
+  });
+  
+}
