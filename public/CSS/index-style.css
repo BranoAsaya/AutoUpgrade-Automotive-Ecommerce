@@ -166,52 +166,75 @@ ul {
   display: none;  
 }
 
-@media (max-width: 414px) {
-.table-xs tr, .table-xs td, .table-xs tbody, .table-xs thead, .table-xs tfoot, .table-xs th {
-  display: table;
-  width: 100%;
-  border-collapse: separate;
-}
-.table-xs > tbody tr:first-child {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
-.table-xs td[title]:before {
-  content: attr(title) ": ";
-}
-.table-xs td:before {
-  white-space: nowrap;
-  width: 50%;
-  display: table-cell;
-  text-align: left;
-  font-weight: bold;
-}
-.table-xs .item-row td:first-child, .table-xs .item-row td:nth-child(2) {
-  border: 0 none;
-}
-.table-xs .item-row td:first-child {
-  border: 0 none;
-}
-.table-xs .item-row td:last-child {
-  background: #eee;
-  border-bottom: 2px solid #a2a2a2;
-  font-weight: bold;
-}
-.table-xs .item-row img {
-  margin-bottom: 1em;
-}
-.table-xs .total-row td {
-  display: table-cell;
-  width: 1%;
-  border-top: 0 none;
-  border-bottom: 3px double #a2a2a2;
-  font-weight: bold;
-  font-size: 1.5em;
-}
-.table-xs .total-row td:first-child {
-  width: 99%;
-}
+table { 
+	width: 750px; 
+	border-collapse: collapse; 
+	margin:50px auto;
+	}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #eee; 
+	}
+
+th { 
+	background: #3498db; 
+	color: white; 
+	font-weight: bold; 
+	}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 18px;
+	}
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table { 
+	  	width: 100%; 
+	}
+
+	
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	td:before { 
+	
+		position: absolute;
+		
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	
+		content: attr(data-column);
+
+		color: #000;
+		font-weight: bold;
+	}
+
 }
 
 

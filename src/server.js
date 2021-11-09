@@ -23,7 +23,9 @@ app.delete("/deleteProduct/:id", (req, res) => {
 app.patch("/updateProduct/:id", (req, res) => {
   functions.updateDocFromDB(req, res, "store", "products");
 });
-
+app.get("/findOneProduct/:id", (req, res) => {
+  functions.findDocFromDB(req, res, "store", "products");
+});
 //Cart//
 app.get("/cartsAPI", (req, res) => {
   functions.APIdatabase(req, res, "store", "carts");
@@ -43,17 +45,14 @@ app.patch("/deleteFromCart/:id", (req, res) => {
 
 //Cart//
 
-
 //Contact//
 app.get("/contactsAPI", (req, res) => {
   functions.APIdatabase(req, res, "store", "contacts");
 });
 app.post("/newContactsMassage", (req, res) => {
-
   functions.createNewMessage(req, res, "store", "contacts");
 });
 
 //Contact//
-
 
 app.listen(8080);

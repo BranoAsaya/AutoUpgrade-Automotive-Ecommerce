@@ -1,10 +1,8 @@
-
 document
   .querySelector(".menu-btn")
   .addEventListener("click", () =>
     document.querySelector(".main-menu").classList.toggle("show")
   );
-
 
 const HomeCards = [
   {
@@ -33,12 +31,13 @@ const HomeCards = [
     details:
       " Getting around the city is now fun and exciting with the Toyota yaris. ",
     link: "./Hatchback.html",
-  }
+  },
 ];
 
-const divHomeCards =document.getElementById("home-cards-id")
-HomeCards.forEach((card)=>
-divHomeCards.innerHTML+=`
+const divHomeCards = document.getElementById("home-cards-id");
+HomeCards.forEach(
+  (card) =>
+    (divHomeCards.innerHTML += `
 <div>
 <img src=${card.img} alt="" />
 <h3>${card.name} </h3>
@@ -46,6 +45,5 @@ divHomeCards.innerHTML+=`
 <a href=${card.link} class="btn">Shop Now </a>
 
 </div>
-`) 
-
-
+`)
+);

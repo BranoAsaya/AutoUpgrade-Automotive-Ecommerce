@@ -47,63 +47,54 @@
       <!-- Showcase -->
       <header
         class="showcase"
-        style="background: url(https://i.ibb.co/YyXnhpx/cart-Casepic.png) no-repeat center center/cover;height: 200px;;"
-      >
-        
-      </header>
-      
+        style="
+          background: url(https://i.ibb.co/YyXnhpx/cart-Casepic.png) no-repeat
+            center center/cover;
+          height: 200px; ;
+        "
+      ></header>
+
       <!-- Home cards  -->
       <section class="home-cards" id="home-cards-id"></section>
-      <div class="container-cart">
-        <h1>Shopping Cart</h1>
-        <table class="table table-xs">
+      <table>
+        <thead>
           <tr>
+            <th>Car Model</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Review</th>
+          </tr>
+        </thead>
+        <tbody id="con-row">
+          <img src="" alt="" style="width: 300px;">
+<!-- <tr>
+<td data-column="First Name">James</td>
+<td data-column="Last Name">Matman</td>
+<td data-column="Job Title">Chief Sandwich Eater</td>
+<td data-column="Twitter">@james</td>
+</tr> -->
+        
+        </tbody>
+      </table>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Total</th>
             <th></th>
-            <th>Description</th>
-            <th class="text-right">Amount</th>
-            <th class="text-right">Price</th>
-            <th class="text-right">Total</th>
+            <th ></th>
+            <th></th>
           </tr>
-<span id="con-row">
-          <tr class="item-row">
-            <td>
-              <img
-                src="https://i.ibb.co/h10hyTk/subaru-impreza.jpg"
-                style="width: 200px"
-              />
-              
-            </td>
-            <td>
-              <p><strong>name</strong></p>
-              <p>details</p>
-            </td>
-            <td class="text-right" title="Amount">&nbsp;&nbsp;&nbsp;&nbsp;1</td>
-            <td class="text-right" title="Price">price</td>
-            <td class="text-right" title="Total">  <a href="#" class="btn">x</a></td>
-          </tr>
-          <tr class="item-row">
-            <td>
-              <img
-                src="https://i.ibb.co/h10hyTk/subaru-impreza.jpg"
-                style="width: 200px"
-              />
-             
-            </td>
-            <td>
-              <p><strong>name</strong></p>
-              <p>details</p>
-            </td>
-            <td class="text-right" title="Amount">&nbsp;&nbsp;&nbsp;&nbsp;1</td>
-            <td class="text-right" title="Price">price</td>
-            <td class="text-right" title="Total">  <a href="#" class="btn">x </a></td>
-          </tr>
-</span>
-          <tr class="total-row info">
-            <td class="text-right" colspan="4"><strong>Total</strong></td>
-            <td class="text-right">price</td>
-          </tr>
-        </table>
-      </div>
+        </thead>
+        <tbody >
+          <tr>
+<td data-column="Total"id="total"></td>
+<td data-column="BUY NOW"><button class="btn">Order</button></td>
+<td data-column=""></td>
+<td data-column=""></td>
+</tr>
+        </tbody>
+      </table>
       <!-- Carbon -->
       <section
         class="carbon dark"
@@ -155,6 +146,7 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <script src="./JS/cart-script.js" type="text/javascript"></script>
   </body>
 </html>

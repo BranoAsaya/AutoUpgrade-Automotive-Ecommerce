@@ -3,8 +3,8 @@ const mongodb = require("mongodb"),
   ObjectId = mongodb.ObjectId,
   url = "mongodb://localhost:27017/",
   client = MongoClient.connect(url),
-  DBname = "store",
-  collection = "products",
+  // DBname = "store",
+  // collection = "products",
   axios = require("axios");
 
 //products//
@@ -103,8 +103,7 @@ function updateDocFromDB(req, res, DB, collection) {
 //Cart//
 
 function createNewCart(req, res, DB, collection) {
-  
-  let object = {products:[],sum:0};
+  let object = { products: [], sum: 0 };
   client
     .then((data) => {
       let database = data.db(DB);
@@ -128,8 +127,7 @@ function findDocFromDB(req, res, DB, collection) {
       let database = data.db(DB);
       database
         .collection(collection)
-        .find(object)
-        .toArray()
+        .findOne(object)
         .then((doc) => {
           res.send(doc);
         });
@@ -140,12 +138,12 @@ function findDocFromDB(req, res, DB, collection) {
 }
 
 function pushDocToCart(req, res, DB, collection) {
-  let params = req.body.id;
-  console.log(params);
-  let object = { _id: ObjectId(params) };
-  let cartId = { _id: ObjectId("618907ce6a95a2a03c875165") };
-  let update = {$push: {products: object}};
-    client
+  let id = req.params.id;
+  let product = req.body;
+  console.log(id);
+  let cartId = { _id: ObjectId("61897b6ff3a750cc79ba1f9e") };
+  let update = { $push: { products: product } };
+  client
     .then((data) => {
       console.log("new item");
       let database = data.db(DB);
@@ -162,31 +160,31 @@ function pushDocToCart(req, res, DB, collection) {
 }
 function deleteDocFromCart(req, res, DB, collection) {
   let params = req.params.id;
-  let object = { _id: ObjectId(params) };
-  let cartId = { _id: ObjectId("618907ce6a95a2a03c875165") };
-  let pull = {$pull: {products: object}};
+  let object = { _id: params };
+  let cartId = { _id: ObjectId("61897b6ff3a750cc79ba1f9e") };
+  let pull = { $pull: { products: object } };
   client
-  .then((data) => {
-    console.log("new item");
-    let database = data.db(DB);
-    database
-      .collection(collection)
-      .findOneAndUpdate(cartId, pull)
-      .then((doc) => {
-        res.send(doc);
-      });
-  })
-  .catch((err) => {
-    console.error(err);
-  });
-
+    .then((data) => {
+      console.log("new item");
+      let database = data.db(DB);
+      database
+        .collection(collection)
+        .findOneAndUpdate(cartId, pull)
+        .then((doc) => {
+          res.send(doc);
+        });
+    })
+    .catch((err) => {
+      console.error(err);
+    });
 }
+
 //Cart//
 
 //Contact//
 function createNewMessage(req, res, DB, collection) {
   let body = req.body;
- 
+
   client
     .then((data) => {
       let database = data.db(DB);
@@ -202,7 +200,6 @@ function createNewMessage(req, res, DB, collection) {
     });
 }
 
-
 //Contact//
 
 module.exports = {
@@ -214,5 +211,5 @@ module.exports = {
   pushDocToCart,
   deleteDocFromCart,
   createNewCart,
-  createNewMessage
+  createNewMessage,
 };
