@@ -183,14 +183,16 @@ function deleteDocFromCart(req, res, DB, collection) {
 
 //Contact//
 function createNewMessage(req, res, DB, collection) {
-  let body = req.body;
+  let params = req.params.id;
+  let object = {message:params}
+console.log(params);
 
   client
     .then((data) => {
       let database = data.db(DB);
       database
         .collection(collection)
-        .insertOne(body)
+        .insertOne(object)
         .then((doc) => {
           res.send(doc);
         });

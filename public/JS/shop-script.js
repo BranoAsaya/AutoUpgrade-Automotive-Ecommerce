@@ -39,7 +39,7 @@ function axiosProducts(page) {
 }
 
 axiosProducts(page);
-
+ 
 function findProductById(id) {
   axios
     .get(`/findOneProduct/${id}`)

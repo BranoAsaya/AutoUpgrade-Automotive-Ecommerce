@@ -15,7 +15,7 @@ axios
         (divTable.innerHTML += `
 
         <tr>
-        <td data-column="Car Model"><img src=${card.pics[0]} alt=""  style="width: 270px;"></td>
+        <td data-column="Car Model"><img src=${card.pics[0]} alt=""  style="width: 250px;"></td>
         <td data-column="Name">${card.name}</td>
         <td data-column="Price">${card.price}<button class="btn" onclick="RemoveDocFromCart('${card._id}')">X</button></td>
         <td data-column="Review">${card.description}</td>

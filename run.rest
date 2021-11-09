@@ -45,7 +45,8 @@ GET http://localhost:8080/findOneCart/618907ce6a95a2a03c875165
 PATCH  http://localhost:8080/addToCartProducts
 ###
 
-PATCH  http://localhost:8080/deleteFromCart/61853b7ac9c617b724fea0c0
+PATCH  http://localhost:8080/deleteFromCart/61853b7ac9c617b724fea0b0
+
 ###
 
 //Cart//
