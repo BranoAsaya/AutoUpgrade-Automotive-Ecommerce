@@ -94,7 +94,9 @@ ul {
 .btn:hover {
   opacity: 0.9;
 }
-
+.btn:focus{
+  background-color:green;
+}
 .dark {
   color: #fff;
 }
@@ -277,6 +279,53 @@ summary {
   border-bottom: 0.3rem solid transparent;
   transition: all 0.3s;
 }
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  width: 285px;
+  margin: -140px 0 0 -182px;
+  padding: 40px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+
+.form input {
+  outline: none;
+  display: block;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-family: "Roboto";
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: 0.2s linear;
+}
+.form input:focus {
+  color: #333;
+  border: 1px solid #44c4e7;
+}
+.form button {
+  cursor: pointer;
+  background: #44c4e7;
+  width: 100%;
+  padding: 10px 15px;
+  border: 0;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+}
+.form button:hover {
+  background: #369cb8;
+}
+
+
 
 /* Carbon */
 .carbon {

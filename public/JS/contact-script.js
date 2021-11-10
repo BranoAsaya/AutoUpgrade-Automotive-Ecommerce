@@ -18,6 +18,7 @@ function newMassage(value) {
     axios
     .post(`/newContactsMassage/${value}`)
     .then((data) => {
+      location.reload()
         
     })
     .catch((error) => {
@@ -32,7 +33,11 @@ function showMessages() {
         
           sms.data.forEach(
             (arg) =>
-              (divMsg.innerHTML += `<div class="message">${arg.message}</div> `)
+              (divMsg.innerHTML += `
+              <div class="message">${arg.message}
+              <button onclick="deleteOneMessage('${arg._id}')"  style="float: right;">x</button>
+              </div>
+               `)
           );
       })
       .catch((error) => {
@@ -40,3 +45,15 @@ function showMessages() {
       });
   }
   showMessages()
+
+function deleteOneMessage(id) {
+  axios
+  .delete(`/deleteMassage/${id}`)
+  .then((data) => {
+    location.reload()
+
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+}

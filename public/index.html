@@ -6,6 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="./CSS/index-style.css" />
+    <style>
+      form { max-width:380px; margin:-100px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 20px;
+  background-color: transparent;
+  border:2px solid #f82b2b;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #f82b2b; }
+
+
+[type="submit"] ,select{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#f82b2b;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#ebe0e0; }
+    </style>
     <link href="https://css.gg/css" rel="stylesheet" />
   </head>
   <body>
@@ -58,12 +98,28 @@
       </section>
 
       <!-- Carbon -->
-      <section class="carbon dark" style="background: url(https://i.ibb.co/wYcZ480/carbon-FOREST.jpg) no-repeat center center/cover;">
+      <section class="carbon dark" style="background: url(https://i.ibb.co/t2TGP9X/photo-1484734278752-212d8c88a568-ixlib-rb-1-2.jpg) no-repeat center center/cover;">
       
         <div class="content">
-          <h2>Add new Product</h2>
+          <!-- <h2>Add new Product</h2> -->
+<form id="form-car">      
+<input name="name" type="text" class="feedback-input" placeholder="Name" required/>   
+<input name="price" type="number" class="feedback-input" placeholder="Price" required/>            
+<select id="selectID" name="category" >
+<option value="" selected>Please choose</option>
+<option value="SUV">SUV</option>
+<option value="Hatchback">Hatchback</option>
+<option value="Sedan">Sedan</option>
+<option value="Truck">Truck</option>
+</select> 
+<input name="description" type="text" class="feedback-input" placeholder="description" required/>   
+<input name="pics" type="url" class="feedback-input" placeholder="image link" pattern="https://.*" required/>   
+<input type="submit" value="ADD PRODUCT"/>            
+</form>
+
+            
+     
          
-          <button class="btn" >RESTART</button>
          
         </div>
         </section>

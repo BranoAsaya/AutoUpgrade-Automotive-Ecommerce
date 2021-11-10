@@ -54,6 +54,9 @@ app.get("/contactsAPI", (req, res) => {
 app.post("/newContactsMassage/:id", (req, res) => {
   functions.createNewMessage(req, res, DBname, "contacts");
 });
+app.delete("/deleteMassage/:id", (req, res) => {
+  functions.deleteDocFromDB(req, res, DBname, "contacts");
+});
 
 //Contact//
 

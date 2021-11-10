@@ -1,3 +1,5 @@
+
+
 document
   .querySelector(".menu-btn")
   .addEventListener("click", () =>
@@ -48,3 +50,19 @@ HomeCards.forEach(
 `)
 );
 
+const FormNewCAR = document.getElementById('form-car')
+FormNewCAR.addEventListener("submit",(e)=>{
+  e.preventDefault()
+let inputs = document.getElementsByClassName('feedback-input')
+let CarType = document.getElementById("selectID").value
+let NewCarObj = {name:inputs[0].value,price:inputs[1].value,category:CarType,description:inputs[2].value,pics:[inputs[3].value]}
+axios
+.post(`/AddProduct`, NewCarObj)
+.then((data) => {
+  console.log(data);
+})
+.catch((error) => {
+  console.log(error);
+});
+
+})

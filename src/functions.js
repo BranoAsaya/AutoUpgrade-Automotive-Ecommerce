@@ -33,13 +33,7 @@ function APIdatabase(req, res, DB, collection) {
 }
 function addDocToDB(req, res, DB, collection) {
   let body = req.body;
-  let newDoc = {
-    name: body.name,
-    price: body.price,
-    category: body.category,
-    description: body.description,
-    pics: [body.pics],
-  };
+
 
   client
     .then((data) => {
@@ -47,7 +41,7 @@ function addDocToDB(req, res, DB, collection) {
       let database = data.db(DB);
       database
         .collection(collection)
-        .insertOne(newDoc)
+        .insertOne(body)
         .then((doc) => {
           res.send(doc);
         });

@@ -27,7 +27,7 @@ function axiosProducts(page) {
 <p>${card.description}</p>
 <a>${card.price} </a>
 <span style='font-size:20px;color:rgb(0, 0, 0);font-style:normal;font-weight:bold;'>&#36;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<button onclick="findProductById('${card._id}')" class="btn">Shop Now </button>
+<button onclick="findProductById('${card._id}')" class="btn">ADD TO &#x1F6D2;</button>
 <button onclick="deleteOneProduct('${card._id}')" class="btn" style='color:red';>x</button>
 </div> 
 `)
@@ -53,12 +53,13 @@ function findProductById(id) {
       console.log(error);
     });
 }
-
+let cartAddCount=document.getElementById("count-btn");
+let counter=0;
 function AddNewDocToCart(product) {
   axios
     .patch(`/addToCartProducts`, product)
     .then((data) => {
-      console.log(data);
+      cartAddCount.innerText=counter++
     })
     .catch((error) => {
       console.log(error);
@@ -69,7 +70,10 @@ function deleteOneProduct(id) {
   axios
     .delete(`/deleteProduct/${id}`)
     .then((data) => {
+      if(counter===0){counter++}
+      cartAddCount.innerText=counter--
       location.reload()
+
     })
     .catch((error) => {
       console.log(error);
