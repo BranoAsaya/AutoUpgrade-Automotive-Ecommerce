@@ -18,7 +18,7 @@ function newMassage(value) {
     axios
     .post(`/newContactsMassage/${value}`)
     .then((data) => {
-        location.reload()
+        
     })
     .catch((error) => {
       console.log(error);

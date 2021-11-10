@@ -28,6 +28,7 @@ function axiosProducts(page) {
 <a>${card.price} </a>
 <span style='font-size:20px;color:rgb(0, 0, 0);font-style:normal;font-weight:bold;'>&#36;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <button onclick="findProductById('${card._id}')" class="btn">Shop Now </button>
+<button onclick="deleteOneProduct('${card._id}')" class="btn" style='color:red';>x</button>
 </div> 
 `)
       );
@@ -63,3 +64,15 @@ function AddNewDocToCart(product) {
       console.log(error);
     });
 }
+
+function deleteOneProduct(id) {
+  axios
+    .delete(`/deleteProduct/${id}`)
+    .then((data) => {
+      location.reload()
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
+

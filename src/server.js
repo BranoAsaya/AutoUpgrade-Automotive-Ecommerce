@@ -27,6 +27,7 @@ app.patch("/updateProduct/:id", (req, res) => {
 app.get("/findOneProduct/:id", (req, res) => {
   functions.findDocFromDB(req, res, DBname, "products");
 });
+
 //Cart//
 app.get("/cartsAPI", (req, res) => {
   functions.APIdatabase(req, res, DBname, "carts");

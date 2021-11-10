@@ -47,3 +47,4 @@ HomeCards.forEach(
 </div>
 `)
 );
+

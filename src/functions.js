@@ -5,7 +5,12 @@ const mongodb = require("mongodb"),
   client = MongoClient.connect(url),
   // DBname = "store",
   // collection = "products",
-  axios = require("axios");
+  axios = require("axios"),
+  fs = require("fs");
+
+const JsonProducts=fs.readFileSync("products.json",'utf8')
+const objProducts=JSON.parse(JsonProducts)
+
 
 //products//
 
@@ -53,6 +58,7 @@ function addDocToDB(req, res, DB, collection) {
 }
 function deleteDocFromDB(req, res, DB, collection) {
   let params = req.params.id;
+  
   let object = { _id: ObjectId(params) };
   client
     .then((data) => {
@@ -97,6 +103,7 @@ function updateDocFromDB(req, res, DB, collection) {
       console.error(err);
     });
 }
+
 
 //products//
 
@@ -214,4 +221,5 @@ module.exports = {
   deleteDocFromCart,
   createNewCart,
   createNewMessage,
+  
 };
