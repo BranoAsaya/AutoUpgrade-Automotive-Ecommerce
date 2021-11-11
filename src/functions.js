@@ -5,6 +5,7 @@ const mongodb = require("mongodb"),
   client = MongoClient.connect(url),
   axios = require("axios"),
   fs = require("fs");
+  require('dotenv').config()
 
 const JsonProducts=fs.readFileSync("products.json",'utf8')
 const objProducts=JSON.parse(JsonProducts)
