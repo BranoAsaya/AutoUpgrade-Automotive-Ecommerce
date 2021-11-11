@@ -1,15 +1,16 @@
+ require('dotenv').config()
 const mongodb = require("mongodb"),
   MongoClient = mongodb.MongoClient,
   ObjectId = mongodb.ObjectId,
-  url =process.env.MONGO_URI || "mongodb://localhost:27017/",
+
+  url =process.env.MONGO_URI ,
   client = MongoClient.connect(url),
   axios = require("axios"),
   fs = require("fs");
-  require('dotenv').config()
+ 
 
 const JsonProducts=fs.readFileSync("products.json",'utf8')
 const objProducts=JSON.parse(JsonProducts)
-
 
 //products//
 
@@ -30,6 +31,7 @@ function APIdatabase(req, res, DB, collection) {
       console.error(err);
     });
 }
+
 function addDocToDB(req, res, DB, collection) {
   let body = req.body;
 
@@ -214,5 +216,6 @@ module.exports = {
   deleteDocFromCart,
   createNewCart,
   createNewMessage,
+ 
   
 };

@@ -4,7 +4,7 @@ const express = require("express"),
   publicPath = path.join(__dirname, "..", "public"),
   functions = require("./functions"),
   DBname="store";
-
+  require('dotenv').config()
 app.use(express.json());
 app.use(express.static(publicPath));
 
