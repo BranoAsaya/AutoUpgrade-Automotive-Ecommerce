@@ -80,3 +80,25 @@ function deleteOneProduct(id) {
     });
 }
 
+const findCar = document.getElementById("findCar");
+const findCarDiv = document.getElementById("divFindCar");
+findCar.addEventListener("keypress",(e)=>{
+  if (e.keyCode=== 13) {
+    e.preventDefault();
+let id = document.getElementById("searchTerm").value
+ 
+  axios
+  .get(`/findOneProduct/${id}`)
+  .then((response) => {
+    
+    findCarDiv.innerHTML=` <img src=${response.data.pics[0]} alt="img"> `
+    
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+
+}
+  
+  
+})

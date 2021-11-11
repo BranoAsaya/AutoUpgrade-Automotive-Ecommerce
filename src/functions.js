@@ -1,10 +1,8 @@
 const mongodb = require("mongodb"),
   MongoClient = mongodb.MongoClient,
   ObjectId = mongodb.ObjectId,
-  url = "mongodb://localhost:27017/",
+  url =process.env.MONGO_URI || "mongodb://localhost:27017/",
   client = MongoClient.connect(url),
-  // DBname = "store",
-  // collection = "products",
   axios = require("axios"),
   fs = require("fs");
 

@@ -43,3 +43,20 @@ renderCartList()
       });
   }
 
+  const FormNewCAR = document.getElementById('form-car')
+  FormNewCAR.addEventListener("submit",(e)=>{
+    e.preventDefault()
+  let inputs = document.getElementsByClassName('feedback-input')
+  let CarType = document.getElementById("selectID").value
+  let NewCarObj = {name:inputs[1].value,price:inputs[2].value,category:CarType,description:inputs[3].value,pics:[inputs[4].value]}
+  let id=inputs[0].value
+  axios
+  .patch(`/updateProduct/${id}`, NewCarObj)
+  .then((data) => {
+    location.reload()
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+  
+  })
